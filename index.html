@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 id="quote"></h1>
+
+    <script>
+      // Add your code bellow, DO NOT MODIFY THE REST OF THE CODE
+      // Find the correct quote in the array hidden quote:
+
+      let hiddenQuote = [
+        "those",
+        "people",
+        "who",
+        "are",
+        "happy",
+        "enough",
+        "to",
+        "think",
+        "they",
+        "can",
+        "change",
+        "the",
+        "world",
+        "are",
+        "the",
+        "ones",
+        "who",
+        "- Michael Jordan",
+      ];
+
+      // 1. Use the array method .shift() to remove the first string in the array hiddenQuote.
+      
+      hiddenQuote.shift("");
+
+      // 2. Now add the element 'The' at the beginnig of the array with .unshift()
+
+      hiddenQuote.unshift("The");
+
+      // 3. Now, remove the element '-Michael Jordan' from the end of the array with .pop()
+
+      hiddenQuote.pop("");
+
+      // 4. Use another array method .push() to add the word 'do.' at the end of the array.
+
+      hiddenQuote.push("do");
+
+      // 5. Add the element '- Steve Jobs' at the end of the array with the .push()
+
+      hiddenQuote.push("Steve Jobs");
+
+      // 6. Replace the word 'happy' with 'crazy' by using the index of 'happy' (the index of 'happy' should be 4)
+
+      hiddenQuote[4]="crazy";
+
+      // You can always check the documentation here : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+      document.getElementById("quote").innerText = hiddenQuote.join(" ");
+    </script>
+  </body>
+</html>
